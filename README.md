@@ -24,7 +24,7 @@ In this talk I'll be discussing the following topics:
   - [A Smoother Path](#a-smoother-path)
 - [Important Factors in Dev. Environment Choice](#important-factors-in-dev-environment-choice)
   - [The Big Three](#the-big-three)
-  - [End Goals](#end-goals)
+  - [Programming Goals](#programming-goals)
   - [Ease Of Setup](#ease-of-setup)
 - [What You Need To Get Started](#what-you-need-to-get-started)
   - [OS](#os)
@@ -59,6 +59,14 @@ A little bit of background here can give you the context you need to launch your
 > Actual footage of you on your journey to programming glory.
 
 ## What Is A Development Environment?
+Your development environment is the collection of all the tools that come together on your computer to help you write code. This includes:
+- the computer itself, and it's operating system
+- programs that allow you to run your code
+- programs that you use for writing code
+- any tools that help you improve your work
+- etc, etc...
+
+This makes your development environment setup a vital part of learning to program, but it's also a very hard part to get right! I've put this talk together to try and help new developers understand what they need, and what their options are.
 
 ## Operating Systems - What Do Developers Need To Know?
 ### How Computers Work
@@ -172,7 +180,7 @@ And if you're coding in a team, you need to make sure that you are producing wor
 ## Important Factors in Dev. Environment Choice
 ### The Big Three
 
-### End Goals
+### Programming Goals
 
 ### Ease Of Setup
 
