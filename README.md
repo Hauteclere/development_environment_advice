@@ -24,9 +24,9 @@ In this talk I'll be discussing the following topics:
   - [Dependency Management](#dependency-management)
   - [A Smoother Path](#a-smoother-path)
 - [Important Factors in Dev. Environment Choice](#important-factors-in-dev-environment-choice)
-  - [The Big Three](#the-big-three)
+  - [The Big Three: Do I Need To Pick An OS?](#the-big-three-do-i-need-to-pick-an-os)
   - [Programming Goals](#programming-goals)
-  - [Industry Standards](#industry-standards)
+- [Industry Standards](#industry-standards)
 - [What You Need To Get Started](#what-you-need-to-get-started)
   - [Terminal](#terminal)
   - [Shell](#shell)
@@ -42,7 +42,6 @@ In this talk I'll be discussing the following topics:
     - [Document Creation](#document-creation)
     - [Project Management](#project-management)
     - [Data Analysis/Dashboarding](#data-analysisdashboarding)
-    - [Communication](#communication)
 - [Paths To Becoming A Dev. Environment Blackbelt](#paths-to-becoming-a-dev-environment-blackbelt)
   - [Dev Environment Upgrades](#dev-environment-upgrades)
   - [Becoming Multilingual](#becoming-multilingual)
@@ -191,30 +190,83 @@ Each one of them has helped carve the path out, by running up against problems a
 If you follow a commonly accepted toolchain progression, you will benefit from the collective wisdom of all the programmers who came before you!
 
 ## Important Factors in Dev. Environment Choice
-### The Big Three
-- The ultimate goal is to try and converge on a system that is:
+### The Big Three: Do I Need To Pick An OS?
+
+![](./img/macwindowslinux.png)
+
+You might be asking yourself, "Don't you mean the big two? What is Linux doing in there?"
+
+In fact, Linux is the top dog when it comes to programming. In most cases, Linux is the gold standard operating system that we need our code to run on. Mac and Windows are competing for second place, and they're actually in pretty close competition, relatively speaking. The only exceptions to this are if you're writing code that is meant to *exclusively* run on either Windows or Linux, but that's honestly not that common in the field.
+
+Really, the reason we are using Windows and Mac at all is just that they are often a lot more convenient day-to-day. We don't want to have to be hackers just to read our emails. 
+
+This means that the ultimate goal is to try and converge on an environment that is:
   - similar to what your colleagues are using
-  - similar to the environment your code will run in
+  - able to emulate Linux enough to be useful
   - easy to use and powerful!
 
 HOWEVER, when you're first starting out, there's a huge amount of information and systems to onboard to achieve that goal. Rather than trying to leap all the way to a final state, I recommend moving in stages. Baby steps towards the final goal.
 
-### Programming Goals
+One thing I **won't** tell you is "if you want to be a programmer, you need to buy brand X". As long as you have a laptop or desktop that works, is relatively recent, and has an up-to-date operating system, you can be a programmer. Mac or Windows, both will work.
 
-### Industry Standards
+### Programming Goals
+The next question you have to ask yourself is: "what sort of developer do I want to be"? 
+
+This won't make a big difference right away, but it will inform what path you go down once you get some more knowledge under your belt.
+
+- **Want to be a Web Developer?** You're eventually going to need API platforms like Insomnia or Postman, wireframing tools, UML capabilities, database management systems, etc...
+- **Want to get into data analytics/science?** You'll need notebooks, visualisation tools, pipelining capabilities, modelling, etc...
+- **Planning on becoming an app developer?** That's going to require testing tools, build tools, distribution platforms, SDKs, etc...
+- **Got your eye on devops?** That means CDKs, containerisation, automation, storage, and secrets managers, etc...
+- **Interested in security?** You're looking at VMs, fuzzers, packet capture, Kali Linux, the Burp Suite, and more...
+
+If you're just this second starting out, this is an intimidating list, but it's good to have this on your horizons so you know what to research. Odds are, you'll have these tools called to your attention once you start learning, and you will be able to slot them into your utility belt one by one.
+
+So what do you need right now, if you're setting up your environment for the first time *today*?
+
+
+## Industry Standards
+
+![](./img/big_four.png)
+
+There are some tools that are so fundamental that everyone should know about them them. I'm not saying that everyone should *use* these fundamental elements all the time, but having access to them is a major boost to your coding power, productivity, and knowledge.
+
+These are tools that programmers all over the world can instantly recognise, and that means that if you fold them into your practise, you'll be making your work interoperable with the work done by a global web of other geniuses.
 
 ## What You Need To Get Started
-
 ### Terminal
+At least a passing familiarity with the terminal is a **giant** power multiplier. 
+
+This is a part of programming that can be *extremely* intimidating, but I promise it is actually simpler than using a regular graphical user interface (GUI). The trick is just to remember that a picture tells a thousand words. Is the terminal displaying a giant wall of confusing text to you right now? That's ok - you've seen more complicated errors from the GUI before a million times, it's just that they were displayed as images. Read the text, google it if you have to; it's probably saying something simple.
+
+On Windows I recommend Windows Terminal as the terminal of choice - it's relatively new. If you want something a little more pared back, you can use the terminal that comes bundled with Git Bash.
+
+On Mac, the regular built-in terminal is just fine, it's just not as pretty as Windows Terminal can be:
+
+![](./img/my_terminal.png)
+
+> It took some work for me to get it looknig this way, but check it out! Windows Terminal is awesome.
 
 ### Shell
+You'll need a shell to use in your terminal. 
+
+Hot take: the shells that come bundled with Windows (Cmd and Powershell) both less than ideal. This is a major problem with Windows - under the hood it's quite different to Linux, so it takes some work to get things working the way you'd expect. Often, the commands in the built-in shells are different, and installation doesn't go the way you'd expect. 
+
+This means that for Windows, I recommend Git Bash at the shell of choice. At the very least, it means that most of the commands work the same as they do in Linux/Mac. It can be a tiny bit more effort to get working, but it's worth it. 
+
+> Once you've got a few months of experience under your belt, try getting the Windows Subsystem for Linux (WSL2) up and running, and after that you can use the Bash shell in Ubuntu Linux, from the comfort of your Windows machine.
+
+On Mac, the bundled shell (Zsh) works just fine.
 
 ### Editor
+VS Code is the editor I recommend to all new programmers. Accept no imitators! It has some excellent addons and I use it for everything.
 
 ### Version Control
+It's gotta be Git, no question about it. Git is key, and everyone should use it for everything.
 
 ### Dependency Management 
 #### For Python
+
 
 #### For Javasript
 
@@ -230,8 +282,6 @@ HOWEVER, when you're first starting out, there's a huge amount of information an
 #### Project Management
 
 #### Data Analysis/Dashboarding
-
-#### Communication
 
 ## Paths To Becoming A Dev. Environment Blackbelt
 ### Dev Environment Upgrades
