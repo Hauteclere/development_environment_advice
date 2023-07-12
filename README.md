@@ -321,5 +321,5 @@ Some quick and dirty advice on what to do once you're feeling comfortable...
 
 
 ### Becoming A Multilingual OS Master
-Once you have the hang of your first programming language, nothing will improve your knowledge by learning a second one. A great way to get closer to the OS while doing this is to learn a low-level language like [Rust](https://www.rust-lang.org/) or C++. This will teach you a ton about what your computer is doing behind the scenes, as well as giving you more employable skills!
+Once you have the hang of your first programming language, nothing will improve your knowledge more than learning a second one. A great way to get closer to the OS while doing this is to learn a low-level language like [Rust](https://www.rust-lang.org/) or C++. This will teach you a ton about what your computer is doing behind the scenes, as well as giving you more employable skills!
 
