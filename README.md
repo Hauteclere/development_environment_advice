@@ -27,7 +27,6 @@ In this talk I'll be discussing the following topics:
   - [Programming Goals](#programming-goals)
   - [Ease Of Setup](#ease-of-setup)
 - [What You Need To Get Started](#what-you-need-to-get-started)
-  - [OS](#os)
   - [Terminal](#terminal)
   - [Shell](#shell)
   - [Editor](#editor)
@@ -185,7 +184,6 @@ And if you're coding in a team, you need to make sure that you are producing wor
 ### Ease Of Setup
 
 ## What You Need To Get Started
-### OS
 
 ### Terminal
 
