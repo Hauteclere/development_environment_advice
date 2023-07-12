@@ -33,7 +33,7 @@ In this talk I'll be discussing the following topics:
   - [Editor](#editor)
   - [Version Control](#version-control)
   - [Dependency Management](#dependency-management-1)
-  - [Peripheral Tools](#peripheral-tools)
+  - [Peripheral Tools/Next Steps](#peripheral-toolsnext-steps)
     - [Text Editing](#text-editing)
     - [Diagramming](#diagramming)
     - [Document Creation](#document-creation)
@@ -274,7 +274,7 @@ An exception to this is Python, which has a bunch of different tools. This is ac
 
 If you're learning Python for the first time, I recommend using [Pyenv](https://blog.teclado.com/how-to-use-pyenv-manage-python-versions/) to manage your Python installation itself. Then use [Pip](https://pypi.org/project/pip/) and [Venv](https://docs.python.org/3/library/venv.html) to handle any extra libraries that you decide to include in your projects.
 
-### Peripheral Tools
+### Peripheral Tools/Next Steps
 #### Text Editing
 Controversial take incoming: word processors suck.
 
