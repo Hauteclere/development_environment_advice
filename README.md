@@ -8,6 +8,7 @@ Hi folks, I'm Oliver! Welcome to my She Codes Checkpoint Talk. This Github repo 
 
 In this talk I'll be discussing the following topics:
 
+- [Why Give This Talk?](#why-give-this-talk)
 - [What Is A Development Environment?](#what-is-a-development-environment)
 - [Operating Systems - What Do Developers Need To Know?](#operating-systems---what-do-developers-need-to-know)
   - [How Computers Work](#how-computers-work)
@@ -25,7 +26,7 @@ In this talk I'll be discussing the following topics:
 - [Important Factors in Dev. Environment Choice](#important-factors-in-dev-environment-choice)
   - [The Big Three](#the-big-three)
   - [Programming Goals](#programming-goals)
-  - [Ease Of Setup](#ease-of-setup)
+  - [Industry Standards](#industry-standards)
 - [What You Need To Get Started](#what-you-need-to-get-started)
   - [OS](#os)
   - [Terminal](#terminal)
@@ -36,7 +37,6 @@ In this talk I'll be discussing the following topics:
     - [For Python](#for-python)
     - [For Javasript](#for-javasript)
     - [For Others](#for-others)
-  - [What's This About Debuggers?](#whats-this-about-debuggers)
   - [Peripheral Tools](#peripheral-tools)
     - [Text Editing](#text-editing)
     - [Diagramming](#diagramming)
@@ -49,11 +49,18 @@ In this talk I'll be discussing the following topics:
   - [Becoming Multilingual](#becoming-multilingual)
   - [Computer Science Theory](#computer-science-theory)
 
+## Why Give This Talk?
 This might seem like a lot of info to get through about if you're just getting into coding, but trust me - this is what I wish I had known before I ever set finger to keyboard. 
 
 It might also seem like these are two pretty separate topics. In fact, they are tightly bound to one another. When you are making decisions about how to set up your development environment, an understanding of the operating system can be crucial.
 
 A little bit of background here can give you the context you need to launch yourself into the most intimidating parts of coding with gusto. The path to being a blackbelt hacker doesn't have an end, but this is a good way to begin!
+
+Given that, the goals of this talk are twofold:
+- Describe how your operating system impacts your development environment
+- Give some advice on getting set up and improving your skills
+
+Caveat: the ideas set out here are my opinion. You'll develop your own preferences and standards as you learn!
 
 ![](./img/neo.gif)
 > Actual footage of you on your journey to programming glory.
@@ -173,16 +180,29 @@ If you're writing desktop apps, you need to make sure that your desktop interact
 And if you're coding in a team, you need to make sure that you are producing work that your colleagues can make use of on their own machines. 
 
 ### Dependency Management
+As you start building things, you'll inevitably pull in more and more tools to do so. Some of your projects will require these tools in order to work at all. If you aren't careful, these can really pile up on you.
 
+An unmanaged development environment can result in some pretty chaotic messes, with version conflicts, broken deployments, and more. Going in with a clear idea of what you're going to use and how you're going to use it can do a lot to prevent these errors.
 
 ### A Smoother Path
+A lot of other people have struggled their way through the challenges of being a junior developer before. 
+
+Each one of them has helped carve the path out, by running up against problems and errors, and either finding a solution themselves, or asking online for help.
+
+If you follow a commonly accepted toolchain progression, you will benefit from the collective wisdom of all the programmers who came before you!
 
 ## Important Factors in Dev. Environment Choice
 ### The Big Three
+- The ultimate goal is to try and converge on a system that is:
+  - similar to what your colleagues are using
+  - similar to the environment your code will run in
+  - easy to use and powerful!
+
+HOWEVER, when you're first starting out, there's a huge amount of information and systems to onboard to achieve that goal. Rather than trying to leap all the way to a final state, I recommend moving in stages. Baby steps towards the final goal.
 
 ### Programming Goals
 
-### Ease Of Setup
+### Industry Standards
 
 ## What You Need To Get Started
 ### OS
@@ -201,8 +221,6 @@ And if you're coding in a team, you need to make sure that you are producing wor
 #### For Javasript
 
 #### For Others
-
-### What's This About Debuggers?
 
 ### Peripheral Tools
 #### Text Editing
