@@ -33,19 +33,14 @@ In this talk I'll be discussing the following topics:
   - [Editor](#editor)
   - [Version Control](#version-control)
   - [Dependency Management](#dependency-management-1)
-    - [For Python](#for-python)
-    - [For Javasript](#for-javasript)
-    - [For Others](#for-others)
   - [Peripheral Tools](#peripheral-tools)
     - [Text Editing](#text-editing)
     - [Diagramming](#diagramming)
     - [Document Creation](#document-creation)
     - [Project Management](#project-management)
-    - [Data Analysis/Dashboarding](#data-analysisdashboarding)
-- [Paths To Becoming A Dev. Environment Blackbelt](#paths-to-becoming-a-dev-environment-blackbelt)
-  - [Dev Environment Upgrades](#dev-environment-upgrades)
-  - [Becoming Multilingual](#becoming-multilingual)
-  - [Computer Science Theory](#computer-science-theory)
+- [Paths To Becoming A Dev. Environment/OS Blackbelt](#paths-to-becoming-a-dev-environmentos-blackbelt)
+  - [Dev Environment Upgrades/Alternatives](#dev-environment-upgradesalternatives)
+  - [Becoming A Multilingual OS Master](#becoming-a-multilingual-os-master)
 
 ## Why Give This Talk?
 This might seem like a lot of info to get through about if you're just getting into coding, but trust me - this is what I wish I had known before I ever set finger to keyboard. 
@@ -239,53 +234,92 @@ At least a passing familiarity with the terminal is a **giant** power multiplier
 
 This is a part of programming that can be *extremely* intimidating, but I promise it is actually simpler than using a regular graphical user interface (GUI). The trick is just to remember that a picture tells a thousand words. Is the terminal displaying a giant wall of confusing text to you right now? That's ok - you've seen more complicated errors from the GUI before a million times, it's just that they were displayed as images. Read the text, google it if you have to; it's probably saying something simple.
 
-On Windows I recommend Windows Terminal as the terminal of choice - it's relatively new. If you want something a little more pared back, you can use the terminal that comes bundled with Git Bash.
+On Windows I recommend [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) as the terminal of choice - it's relatively new. If you want something a little more pared back, you can use the terminal that comes bundled with [Git Bash](https://git-scm.com/downloads).
 
 On Mac, the regular built-in terminal is just fine, it's just not as pretty as Windows Terminal can be:
 
 ![](./img/my_terminal.png)
 
-> It took some work for me to get it looknig this way, but check it out! Windows Terminal is awesome.
+> It took some work for me to get it looking this way, but check it out! Windows Terminal is awesome.
 
 ### Shell
 You'll need a shell to use in your terminal. 
 
-Hot take: the shells that come bundled with Windows (Cmd and Powershell) both less than ideal. This is a major problem with Windows - under the hood it's quite different to Linux, so it takes some work to get things working the way you'd expect. Often, the commands in the built-in shells are different, and installation doesn't go the way you'd expect. 
+Hot take: the shells that come bundled with Windows (Cmd and Powershell) both less than ideal. This is one less wonderful aspect of Windows - under the hood it's quite different to Linux, so it takes some work to get things working the way youwight prefer. Often, the commands in the built-in shells are different, and installation doesn't go the way you'd expect. 
 
-This means that for Windows, I recommend Git Bash at the shell of choice. At the very least, it means that most of the commands work the same as they do in Linux/Mac. It can be a tiny bit more effort to get working, but it's worth it. 
+This means that for Windows, I recommend [Git Bash](https://git-scm.com/downloads) at the shell of choice. At the very least, it means that most of the commands work the same as they do in Linux/Mac. It can be a tiny bit more effort to get working, but it's worth it. 
 
-> Once you've got a few months of experience under your belt, try getting the Windows Subsystem for Linux (WSL2) up and running, and after that you can use the Bash shell in Ubuntu Linux, from the comfort of your Windows machine.
+> Once you've got a few months of experience under your belt, try getting the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL2) up and running, and after that you can use the Bash shell in Ubuntu Linux, from the comfort of your Windows machine.
 
-On Mac, the bundled shell (Zsh) works just fine.
+On Mac, the bundled shell (Zsh) works just fine. You don't have to install this because it comes pre-installed, [but here's a link to the docs](https://opensource.com/article/19/9/getting-started-zsh).
 
 ### Editor
-VS Code is the editor I recommend to all new programmers. Accept no imitators! It has some excellent addons and I use it for everything.
+You need somewhere to write your code!
+
+[VS Code](https://code.visualstudio.com/) is the editor I recommend to all new programmers. Accept no imitators! It has some excellent addons and I use it for everything.
+
+Some people enjoy using an Integrated Development Environment like Pycharm, but personally I think it's better to have something simpler and more customisable. Pycharm and other IDEs are like giant honking Swiss Army knives that include a little chainsaw and an emergency flare and won't even fit in your pocket. VS Code is a samurai sword. Simple, elegant, deadly. >:) 
 
 ### Version Control
-It's gotta be Git, no question about it. Git is key, and everyone should use it for everything.
+Version control is a vital part of coding. You need a way to back up the code you write, and track the changes you make to it, or pretty soon you'll find that your project is impossible to work on.
+
+For version control, it's gotta be [Git](https://git-scm.com/downloads), no question about it. Git is key, and everyone should use it for everything.
+
+Particularly, I recommend using Git **in the terminal**. There's a graphical user interface for it, but it doesn't give you the power and control that the Command Line Interface (CLI) does. If you like to have visualisations of what you're doing in the terminal, there are some great addons for VS Code that work well when combined with CLI Git.
 
 ### Dependency Management 
-#### For Python
+Most languages have a single built-in or universally-used method for managing dependencies, so you'll generally learn how to do that when you're learning the language. 
 
+An exception to this is Python, which has a bunch of different tools. This is actually a bit of a weakness of Python as a language. 
 
-#### For Javasript
-
-#### For Others
+If you're learning Python for the first time, I recommend using [Pyenv](https://blog.teclado.com/how-to-use-pyenv-manage-python-versions/) to manage your Python installation itself. Then use [Pip](https://pypi.org/project/pip/) and [Venv](https://docs.python.org/3/library/venv.html) to handle any extra libraries that you decide to include in your projects.
 
 ### Peripheral Tools
 #### Text Editing
+Controversial take incoming: word processors suck.
+
+There are two big problems with them: 
+- If you make a document in, say, Microsoft Word, you **need** Microsoft Word to read it later. But Word isn't installed on every machine, and often you need to have the text you've written available as a website, AND a document, AND a live text that you can change when you need to, all at once.
+- They hide the nuts and bolts from you behind clicky buttons in the GUI. This is why you end up fiddling around with wrapped images in your Word document, and find that if you move one element a single pixel to the left, all the other image on the page bounce off and hide in the top margin. I want to decide where my images go, and I want Microsoft Word to butt out.
+
+The solution is: Code As Documents. There's a great, incredibly simple language called [Markdown](https://github.github.com/gfm/) that lets you define documents. The code you write is so similar to the text you see that you can read the document right in your editor. AND you can deploy it straight to the web and have it appear as a beautiful formatted document. 
+
+The page you're reading right now is 100% written in Markdown, and honestly I seldom use anything else. I'm faster at writing documents in markdown than in any other format. Check it out, here's some markdown code:
+
+![](./img/this_markdown_screenshot_that_youre_looking_at_right_now.png)
+
+> Inception.
 
 #### Diagramming
+This one is a bit niche, but oh-so useful. I'm putting it in here even though it's not an industry standard, because it *should* be.
+
+As a programmer, you very often need to create diagrams. There are a bunch of tools out there that will let you do that, but one big issue is that those tools are separate to the code that you write. 
+
+If you get most of the way through a project and then realise that you have to go back and update a diagram, it can often be a major chore. I've had situations before where I've lost access to the original diagram (because it vanished from a cloud platform) and I've had to re-draw the entire thing from scratch!
+
+The [Unnoficial Draw.io Integration For VS Code](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) is a gamechanger. It lets you create diagrams as code, right in your editor. This means that they're included in your version control. And if you're using Markdown, you can edit the diagrams that are in your document and see them update live - no copying and pasting the updated images into Word!
 
 #### Document Creation
+Unfortunately, not everyone has a Markdown editor. That means that even though it sucks, you occasionally need to turn your code into a Word document, or a PDF, or even translate it into HTML.
+
+There's an excellent command line tool that can do this and much more, called [Pandoc](https://pandoc.org/). It's ludicrously powerful, and if you search "how can I convert x to y" on Google, it's usually the first result, no matter what document formats you listed.
 
 #### Project Management
+When you're working on something complicated, it pays to have a way to keep track of what tasks you have coming up and what is required for them. In my live talk, I listed [Jira](https://www.atlassian.com/software/jira) for this, because it is widely used in industry.
 
-#### Data Analysis/Dashboarding
+A good point was raised by my incredible colleague and friend [Carlie](https://www.linkedin.com/in/carlie-hamilton/), though - Jira is a lot of work to set up!
 
-## Paths To Becoming A Dev. Environment Blackbelt
-### Dev Environment Upgrades
+For this reason, a better choice when you're starting out is [Trello](https://trello.com/). If you get the hang of using it, you'll find it easy to transition to something more complex if you ever find yourself working in a job that needs you to.
 
-### Becoming Multilingual
+## Paths To Becoming A Dev. Environment/OS Blackbelt
+Some quick and dirty advice on what to do once you're feeling comfortable...
 
-### Computer Science Theory
+### Dev Environment Upgrades/Alternatives
+- If you're on Windows, explore [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)!
+- Look into using [Docker containers as your dev environment](https://learn.microsoft.com/en-us/training/modules/use-docker-container-dev-env-vs-code/).
+- Try out [Github Codespaces](https://github.com/features/codespaces)
+
+
+### Becoming A Multilingual OS Master
+Once you have the hang of your first programming language, nothing will improve your knowledge by learning a second one. A great way to get closer to the OS while doing this is to learn a low-level language like [Rust](https://www.rust-lang.org/) or C++. This will teach you a ton about what your computer is doing behind the scenes, as well as giving you more employable skills!
+
